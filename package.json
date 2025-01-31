@@ -6,8 +6,12 @@
   "engines": {
     "vscode": "^1.96.0"
   },
-  "categories": ["Other"],
+  "categories": [
+    "Other"
+  ],
   "activationEvents": [
+    "onCommand:extension.rewindCode",
+    "onCommand:extension.fastForwardCode",
     "onCommand:extension.refactorCode"
   ],
   "main": "./dist/extension.js",
@@ -16,6 +20,14 @@
       {
         "command": "extension.refactorCode",
         "title": "Refactor Code with AI"
+      },
+      {
+        "command": "extension.rewindCode",
+        "title": "Rewind Code"
+      },
+      {
+        "command": "extension.fastForwardCode",
+        "title": "Fast Forward Code"
       }
     ]
   },
