@@ -10,9 +10,7 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:extension.rewindCode",
-    "onCommand:extension.fastForwardCode",
-    "onCommand:extension.refactorCode"
+    "onStartupFinished"
   ],
   "main": "./dist/extension.js",
   "contributes": {
