@@ -105,7 +105,7 @@ function activate(context) {
         }
         try {
             // Call NestJS API
-            const response = await axios_1.default.post('http://localhost:3000/ai/refactor/open-route', {
+            const response = await axios_1.default.post('https://code-refactor-backend-production.up.railway.app/ai/refactor/open-route', {
                 code: selectedText,
                 language,
             });
